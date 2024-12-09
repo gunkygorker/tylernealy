@@ -1,0 +1,154 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 110%;
+    width: 100%;
+}
+
+#wrap {
+    width: 100%;
+    height: 110%;
+	display: flex;
+    justify-content: center;
+    align-items: top;
+	background: linear-gradient(to bottom left, #4aa6ae, #cbecf1);
+}
+
+.button-container {
+	position: fixed;
+    display: flex;
+    width: 100%;
+    max-width: screen-width;
+	overflow: hidden;
+	z-index: 1000;
+}
+
+button {
+    flex: 1; /* Ensures all buttons take up equal space */
+    padding: 10px 0;
+    text-align: center;
+    border-width: 2px;
+	border-color: #43b7c9;
+    cursor: pointer;
+    font-size: 32px;
+	color: white;	
+    outline: none;
+    transition: background-color 0.3s, color 0.3s;
+	height:75px;
+	float: left;
+	background-color: #4aa6ae;
+	font-weight: bold;
+	font-family: 'Segoe UI';
+}
+
+button:hover {
+    background-color: #7dcbd9;
+	color: #3d8c93;
+}
+
+.text-box {
+	background: rgba(61, 140, 147, 0.5);
+}
+
+h1 {
+	padding-left: 15px;
+	font-weight: bold;
+	font-family: 'Segoe UI';
+	font-size: 36px;
+	color: white;
+}
+
+#left-h1 {
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+#left-box {
+	float: left;
+	margin-right: 7.5%;
+	height: 50%;
+	width: 25%;
+	margin-top: 10%;
+	margin-bottom: 5%;
+	padding: 0px;
+}
+
+#right-box {
+	float: right;
+	height: 50%;
+	width: 57.5%;
+	margin-top: 10%;
+	margin-bottom: 5%;
+	padding: 0px;
+}
+
+p {
+	font-size: 24px;
+	font-weight: bold;
+	font-family: 'Segoe UI';
+	color: white;
+	padding: 15px;
+	padding-top: 0px;
+	margin-top: 0px;
+}
+
+.carousel {
+    position: relative;
+    width: auto;  /* Example width */
+    height: 400px; /* Example height */
+    margin: 0 auto; /* Center the carousel */
+    overflow: hidden; /* Hide anything outside the div */
+}
+
+.carousel img {
+    width: auto; 
+    height: 100%; 
+    display: block; /* Remove unwanted gaps below the image */
+    object-fit: contain; /* Ensure the image fits without cropping */
+	padding: 10px;
+	z-index: 3;
+	margin:0 auto
+}
+
+.carousel button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); /* Center the button vertically */
+    background-color: transparent; /* Remove button background */
+    border: none; /* Remove border */
+    padding: 0;
+    cursor: pointer;
+    z-index: 997;
+}
+
+.carousel button:hover {
+    opacity: 0.7;
+}
+
+#prev-btn {
+    left: 0px; /* Position the button to the left outside the container */
+    background-image: url(images/ArrowButton.png); /* Set your custom image here */
+    background-size: contain; /* Resize the image to fit the button */
+    background-repeat: no-repeat; /* Avoid repeating the background */
+    width: 100px; /* Set the width of the button */
+    height: 200px; /* Set the height of the button */
+}
+
+#next-btn {
+    right: 0px; /* Position the button to the right outside the container */
+    background-image: url(images/ArrowButton2.png); /* Set your custom image here */
+    background-size: contain; /* Resize the image to fit the button */
+    background-repeat: no-repeat; /* Avoid repeating the background */
+    width: 100px; /* Set the width of the button */
+    height: 200px; /* Set the height of the button */
+}
+
+.desc {
+	position: relative;
+    width: auto;  /* Example width */
+    height: 200px; /* Example height */
+    margin: 0 auto;
+	margin-top: 400;
+    overflow: hidden; /* Hide anything outside the div */
+}
+
